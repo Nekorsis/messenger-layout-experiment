@@ -1,9 +1,9 @@
 import ContextMenu from "../../icons/ContextMenu";
 import Person from "../../icons/Person";
-import Star from "../../icons/Star";
 import NotificationsIndicator from "../NotificationsIndicator/NotificationsIndicator";
 import SearchInput from "../SearchInput/SearchInput";
 import StyledText from "../Typography/StyledText";
+import ChatFavoriteToggle from "./ChatFavoriteToggle";
 
 const ChatHeader = () => {
   return (
@@ -12,7 +12,7 @@ const ChatHeader = () => {
         <StyledText fontSize="20" bold>
           #chat_name
         </StyledText>
-        <Star className="ml-2 cursor-pointer" />
+        <ChatFavoriteToggle />
       </div>
       <div className="flex flex-row items-center">
         <Person />

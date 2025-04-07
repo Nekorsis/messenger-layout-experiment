@@ -2,45 +2,7 @@ import { useState } from "react";
 import { IChat } from "../../utils/types";
 import AddChatButton from "../AddChatButton/AddChatButton";
 import ChatPreview from "../ChatPreview/ChatPreview";
-import chatLogo from "./../../assets/images/logo.png";
-
-const CHATS_MOCK: IChat[] = [
-  {
-    id: 0,
-    name: "Chat 1",
-    avatar: chatLogo,
-  },
-  {
-    id: 2,
-    name: "Chat 2",
-    avatar: chatLogo,
-  },
-  {
-    id: 3,
-    name: "Chat 3",
-    avatar: chatLogo,
-  },
-  {
-    id: 4,
-    name: "Chat 4",
-    avatar: chatLogo,
-  },
-  {
-    id: 5,
-    name: "Chat 5",
-    avatar: chatLogo,
-  },
-  {
-    id: 6,
-    name: "Chat 6",
-    avatar: chatLogo,
-  },
-  {
-    id: 7,
-    name: "Chat 7",
-    avatar: chatLogo,
-  },
-];
+import { CHATS_MOCK } from "../../utils/mocks";
 
 const ChatsList = () => {
   const [selected, setSelected] = useState<IChat | null>(CHATS_MOCK[0]);

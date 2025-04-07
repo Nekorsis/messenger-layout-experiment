@@ -3,53 +3,7 @@ import { cn } from "../../utils/cn";
 import StyledText from "../Typography/StyledText";
 import { IChannel } from "../../utils/types";
 import ChannelPreview from "../ChannelPreview/ChannelPreview";
-
-const CHANNELS_MOCK: IChannel[] = [
-  {
-    id: 0,
-    name: "# general",
-  },
-  {
-    id: 1,
-    name: "# support",
-  },
-  {
-    id: 2,
-    name: "# marketing",
-  },
-  {
-    id: 3,
-    name: "# thailand",
-  },
-  {
-    id: 4,
-    name: "# bali",
-  },
-  {
-    id: 5,
-    name: "# poland",
-  },
-  {
-    id: 6,
-    name: "# australia",
-  },
-  {
-    id: 7,
-    name: "# jobs",
-  },
-  {
-    id: 8,
-    name: "# startups",
-  },
-  {
-    id: 9,
-    name: "# italy",
-  },
-  {
-    id: 10,
-    name: "# freelance",
-  },
-];
+import { CHANNELS_MOCK } from "../../utils/mocks";
 
 interface IProps {
   className?: string;

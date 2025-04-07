@@ -15,3 +15,11 @@ export interface IChat {
     name: string;
     avatar: string;
 }
+
+export interface IMessage {
+    id: number;
+    userId: number;
+    user: IUser;
+    text: string;
+    createdAt: Date;
+}
